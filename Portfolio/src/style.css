@@ -151,7 +151,8 @@ button:focus {
   }
 }
 .navbar-brand {
-  color: rgb(250, 250, 250) !important;
+  color: #c770f0 !important;
+  font-weight: bold;
 }
 
 .logo {
