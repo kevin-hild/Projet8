@@ -7,34 +7,26 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
+          <p className="p2" style={{ textAlign: "justify" }}>
+            Bonjour à tous, je suis <span className="purple">Kevin Hild </span>
+            de <span className="purple"> Strasbourg, en Alsace.</span>
             <br />
-            I am currently employed as a software developer at Juspay.
+            Je viens de finaliser ma formation de développeur web avec OpenClassrooms.
             <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            Je voudrais continuer à me former pour acquérir plus d'expérience,
+            continuer à apprendre de nouvelles choses qui me seront utiles pour les entreprises qui m'engageront.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            En plus du codage, j'aime aussi pratiquer d'autres activités !
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Jouer à des jeux vidéo
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> M'informer sur les nouvelles technologies, les tendances du web et de l'univers gaming
             </li>
           </ul>
-
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
         </blockquote>
       </Card.Body>
     </Card>
