@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import kasa from "../../Assets/Projects/Kasa.webp";
+import nina from "../../Assets/Projects/NinaCarducci.webp";
+import booki from "../../Assets/Projects/booki.webp";
+import grimoire from "../../Assets/Projects/MonVieuxGrimoire.webp";
+import SophieBluel from "../../Assets/Projects/SophieBluel.webp";
+// import emotion from "../../Assets/Projects/emotion.png";
 
 function Projects() {
   return (
@@ -15,68 +15,73 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          Mes récents <strong className="purple">Projets </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Voici les projets sur lesquels j'ai travaillé récemment.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={booki}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Booki"
+              description="Développement de la page d'accueil d'une agence de voyage en HTML et CSS pour offrir aux utilisateurs une plateforme intuitive.
+              Ce site permet de rechercher facilement des hébergements et des activités par ville, avec une mise en page attrayante et optimisée pour une expérience utilisateur fluide et agréable."
+              ghLink="https://github.com/kevin-hild/OCR-Projet-2-Booki"
+              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={SophieBluel}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Sophie Bluel"
+              description="Développement d'un portfolio interactif pour Sophie Bluel, conçu en JavaScript pour une expérience utilisateur dynamique.
+              Ce projet met en valeur les compétences et réalisations de Sophie à travers une interface moderne et réactive, permettant une navigation fluide et des interactions engageantes avec le contenu."
+              ghLink="https://github.com/kevin-hild/Projet3"
+              // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={nina}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Nina Carducci"
+              description="Débogage et optimisation du site web d'une photographe, Nina Carducci, en utilisant l'outil Lighthouse.
+              Ce projet vise à améliorer les performances, l'accessibilité, et le référencement du site, pour garantir une expérience utilisateur rapide et fluide tout en renforçant la visibilité en ligne"
+              ghLink="https://github.com/kevin-hild/Projet4"
+              // demoLink="https://editor.soumya-jit.tech/"             
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={kasa}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Kasa"
+              description="Développement d'une application web de location immobilière, nommée Kasa, en utilisant React.
+              Cette application permet aux utilisateurs de rechercher et de consulter des offres de location, avec une interface moderne, réactive et optimisée pour une expérience utilisateur immersive et intuitive."
+              ghLink="https://github.com/kevin-hild/Projet5"
+              // demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={grimoire}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              title="Mon Vieux Grimoire"
+              description="Développement du back-end du site de notation de livres Mon Vieux Grimoire en utilisant Node.js et Express pour la création de l'API, et MongoDB pour le stockage des données.
+              Ce projet permet aux utilisateurs d'ajouter, consulter et évaluer des livres via une API sécurisée et performante, avec une gestion efficace des données et une architecture robuste pour une expérience utilisateur fluide et fiable."
+              ghLink="https://github.com/kevin-hild/Projet6"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
@@ -86,7 +91,7 @@ function Projects() {
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>
